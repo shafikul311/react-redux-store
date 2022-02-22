@@ -2,12 +2,12 @@ export const ADD_TO_CART = 'ADD_TO_CART';
 export const REMOVE_FROM_CART = 'REMOVE_FROM_CART';
 
 
-export const addToCart = id => {
+export const addToCart = (id, name) => {
 
-     return { type: ADD_TO_CART, id}
+     return { type: ADD_TO_CART, id, name }
     }
 
-export const removeFromCArt = id => { 
+export const removeFromCart = cartId => { 
 
-    return { type: REMOVE_FROM_CART, id} 
+    return { type: REMOVE_FROM_CART, cartId} 
 }
